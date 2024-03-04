@@ -25,14 +25,17 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
 ![](./Screenshots/mobile.png)
 ![](./Screenshots/desktop.png)
 
+### Design
+
+![](./design/mobile-design.jpg)
+![](./design/desktop-design.jpg)
 
 ### Links
 
-- Live Site URL: []
+- Live Site URL: [https://fabriciodag.github.io/FM-ProductPreviewCard/]
 
 ## My process
 
