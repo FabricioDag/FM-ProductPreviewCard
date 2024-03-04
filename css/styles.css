@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+:root{
+    --btn-cyan:hsl(158, 36%, 37%);
+    --color-bg:hsl(30, 38%, 92%);
+    --color-font:hsl(212, 21%, 14%);
+    --color-p:hsl(228, 12%, 48%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide{
+    display: none;
+}
+
+body{
+    background-color: var(--color-bg);
+    padding: 1rem;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    background-color: white;
+    max-width: 370px;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.image-area{
+    width: 100%;
+}
+
+.image-area img{
+    width: 100%;
+}
+
+.text-area{
+    padding: 1.5rem;
+}
+
+.text-area span{
+    color: var(--color-p);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: .8rem;
+}
+
+.title{
+    color: var(--color-font);
+    margin:1rem 0;
+}
+
+.text-area p{
+    color: var(--color-p);
+}
+
+.price{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.price h1{
+    color: var(--btn-cyan);
+}
+
+.price small{
+    color: var(--color-p);
+    text-decoration: line-through;
+}
+
+button{
+    margin-top: 1rem;
+    width: 100%;
+    background-color: var(--btn-cyan);
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    transition: .3s ease;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+.desktop{
+    display: none;
+}
+
+@media only screen and (min-width: 751px){
+    .container{
+        display: flex;
+        max-width: 800px;
+    }
+
+    .image-area{
+        width: 150%;
+    }
+
+    .desktop{
+        display: block;
+        height: 100%;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .text-area{
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .text-area p{
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .text-area h1{
+        font-size: 2.5rem;
+    }
+
+
+}
